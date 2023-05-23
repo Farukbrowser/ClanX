@@ -1,0 +1,25 @@
+#!/bin/bash
+touch kelazz
+mulog=$(mesinssh)
+date=$(date)
+data=( `cat /etc/passwd | grep home | cut -d ' ' -f 1 | cut -d : -f 1`)
+for user in "${data[@]}"
+do
+#iplimit=$(cat /etc/funny/limit/ssh/ip/$user)
+cekcek=$(echo -e "$mulog" | grep $user | wc -l);
+if [[ $cekcek -gt 3 ]]; then
+echo -e "$mulog | grep $user | cut -d ' ' -f 3" >> kelazz
+pkill -u $user
+killall -9 -u $user
+userdel -f -r $user
+userdel $user
+sleep 1
+nais=3
+echo -e "$waktu\nRemoved User: $user Login: $cekcek IP Max: 1 IP \n" >> ssh.log
+else
+echo > /dev/null
+fi
+sleep 0.1
+done
+echo "sukses"
+rm kelazz
