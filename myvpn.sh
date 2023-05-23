@@ -193,11 +193,12 @@ echo "------------------------------------------------------------"
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22, 53, 2222, 2269"  | tee -a log-install.txt
-echo "   - SSH Websocket           : 80" | tee -a log-install.txt
-echo "   - SSH SSL Websocket       : 443" | tee -a log-install.txt
-echo "   - Stunnel5                : 222, 777" | tee -a log-install.txt
-echo "   - Dropbear                : 109, 143" | tee -a log-install.txt
-echo "   - Badvpn                  : 7100-7300" | tee -a log-install.txt
+echo "   - SSH Websocket           : 80, 8080, 2082" | tee -a log-install.txt
+echo "   - SSH Websocket Direct    : 8080 " | tee -a log-install.txt
+echo "   - SSH SSL/TLS Websocket   : 443" | tee -a log-install.txt
+echo "   - Stunnel5                : 222, 442, 777, 2096" | tee -a log-install.txt
+echo "   - Dropbear                : 44, 69, 143" | tee -a log-install.txt
+echo "   - Badvpn                  : 7100, 7300, 7200" | tee -a log-install.txt
 echo "   - Nginx                   : 81" | tee -a log-install.txt
 echo "   - XRAY  Vmess TLS         : 443" | tee -a log-install.txt
 echo "   - XRAY  Vmess None TLS    : 80" | tee -a log-install.txt
@@ -206,11 +207,11 @@ echo "   - XRAY  Vless None TLS    : 80" | tee -a log-install.txt
 echo "   - Trojan GRPC             : 443" | tee -a log-install.txt
 echo "   - Trojan WS               : 443" | tee -a log-install.txt
 echo "   - Trojan GO               : 443" | tee -a log-install.txt
-echo "   - Sodosok WS/GRPC         : 443" | tee -a log-install.txt
-echo "   - SLOWDNS                 : 53"  | tee -a log-install.txt
+echo "   - ShadowSocks WS/GRPC     : 443" | tee -a log-install.txt
+echo "   - SLOWDNS                 : 53, 22"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "   - Timezone                : Nigeria (GMT +1)"  | tee -a log-install.txt
 echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
 echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
 echo "   - IPtables                : [ON]"  | tee -a log-install.txt
