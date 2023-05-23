@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-# Link Hosting Kalian
+# Your Hosting Link
 akbarvpn="raw.githubusercontent.com/Farukbrowser/Mantap/main/backup"
 
 apt install rclone -y
@@ -36,9 +36,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user vpncyber673@gmail.com
-from vpncyber673@gmail.com
-password tiscblgjyrahfjmi 
+user 24clanssh@gmail.com
+from 24clanssh@gmail.com
+password ninenannayi 
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
