@@ -99,6 +99,6 @@ rm -f /root/vnstat-2.6.tar.gz >/dev/null 2>&1
 rm -rf /root/vnstat-2.6 >/dev/null 2>&1
 
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
-yellow "Done Bangsat...!!"
+yellow "Done bro...!!"
 sleep 3
 clear

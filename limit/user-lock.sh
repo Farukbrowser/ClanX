@@ -38,7 +38,7 @@ clear
   echo -e "  [34m※[0m Username : ${blue}$username${NC}";
   echo -e "  [31m※[0m Status   : ${red}LOCKED${NC}";
   echo " ";
-  echo " ★ POWER BY ClanXVPN™ SERVER ★";
+  echo " ★ POWERED BY ClanXVPN™ SERVER ★";
   echo " ";
 	echo " ";
 	echo " ";
