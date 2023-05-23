@@ -172,13 +172,19 @@ sed -i '/Port 22/a Port 51443' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 58080' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 200' /etc/ssh/sshd_config
 sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
+sed -i '/Port 80/a Port 500' /etc/ssh/sshd_config
+sed -i '/Port 80/a Port 40000' /etc/ssh/sshd_config
+sed -i '/Port 80/a Port 51443' /etc/ssh/sshd_config
+sed -i '/Port 80/a Port 58080' /etc/ssh/sshd_config
+sed -i '/Port 80/a Port 200' /etc/ssh/sshd_config
+sed -i 's/#Port 80/Port 22/g' /etc/ssh/sshd_config
 /etc/init.d/ssh restart
 
 echo "=== Install Dropbear ==="
 # install dropbear
 apt -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=143/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=80/DROPBEAR_PORT=143/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 50000 -p 109 -p 110 -p 69"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
@@ -196,15 +202,35 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [dropbear]
+accept = 444
+connect = 127.0.0.1:109
+
+[dropbear]
+accept = 446
+connect = 127.0.0.1:22
+
+[dropbear]
+accept = 443
+connect = 127.0.0.1:109
+
+[dropbear]
+accept = 777
+connect = 127.0.0.1:22
+
+[dropbear]
 accept = 222
 connect = 127.0.0.1:22
 
 [dropbear]
-accept = 777
+accept = 990
 connect = 127.0.0.1:109
 
 [ws-stunnel]
 accept = 2096
+connect = 700
+
+[ws-stunnel]
+accept = 2097
 connect = 700
 
 [openvpn]
