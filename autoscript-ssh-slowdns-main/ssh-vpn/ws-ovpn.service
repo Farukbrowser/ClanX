@@ -1,5 +1,5 @@
 [Unit]
-Description=Websocket-SSH By ZenHost
+Description=Websocket-SSH By Farukbrowser
 Documentation=https://cvpn.ovh
 After=network.target nss-lookup.target
 

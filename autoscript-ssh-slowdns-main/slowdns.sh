@@ -34,7 +34,7 @@ rm nsdomain
 #input nameserver manual to cloudflare
 
 
-read -rp "Masukkan Nameserver: " -e sub
+read -rp "Enter Your NameServer: eg. dns.24clanssh.com" -e sub
 SUB_DOMAIN=${sub}
 NS_DOMAIN=${SUB_DOMAIN}
 echo $NS_DOMAIN > /root/nsdomain

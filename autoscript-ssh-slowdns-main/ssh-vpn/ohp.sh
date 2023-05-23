@@ -27,7 +27,7 @@ chmod +x /usr/local/bin/ohp
 #Buat File OpenVPN TCP OHP
 cat > /etc/openvpn/client-tcp-ohp1194.ovpn <<END
 ############## WELCOME ###############
-############# By Zenhost ##############
+############# By Farukbrowser ##############
 client
 dev tun
 proto tcp
@@ -67,7 +67,7 @@ cd
 cat > /etc/systemd/system/ohp.service <<END
 [Unit]
 Description=Direct Squid Proxy For OpenVPN TCP By DIYVPN
-Documentation=https://t.me/zenhost_official
+Documentation=https://t.me/fbrowser
 Wants=network.target
 After=network.target
 
@@ -87,4 +87,4 @@ echo ""
 echo -e "${GREEN}Done Installing OHP Server${NC}"
 echo -e "Port OVPN OHP TCP: $Port_OHP"
 echo -e "Link Download OVPN OHP: http://$MYIP:81/client-tcp-ohp1194.ovpn"
-echo -e "Script By Zenhost"
+echo -e "Script By Farukbrowser"

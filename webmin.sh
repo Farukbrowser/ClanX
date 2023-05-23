@@ -117,6 +117,6 @@ elif [[ "$num" = "3" ]]; then
 uninstall
 else
 clear
-echo "Masukkan Angka Yang Ada!"
+echo "Enter Existing Numbers!"
 menu
 fi

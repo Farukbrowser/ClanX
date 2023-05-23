@@ -18,7 +18,7 @@ date=$(date +"%Y-%m-%d")
 clear
 email=$(cat /home/email)
 if [[ "$email" = "" ]]; then
-echo "Masukkan Email Untuk Menerima Backup"
+echo "Enter Email To Receive Backup"
 read -rp "Email : " -e email
 cat <<EOF>>/home/email
 $email
@@ -26,7 +26,7 @@ EOF
 fi
 clear
 figlet "Backup"
-echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
+echo "Please Wait, Backup Process is in progress !!"
 rm -rf /root/backup
 mkdir /root/backup
 cp /etc/passwd backup/
@@ -48,7 +48,7 @@ Detail Backup
 ==================================
 IP VPS        : $IP
 Link Backup   : $link
-Tanggal       : $date
+Date          : $date
 ==================================
 " | mail -s "Backup Data" $email
 rm -rf /root/backup
@@ -59,7 +59,7 @@ Detail Backup
 ==================================
 IP VPS        : $IP
 Link Backup   : $link
-Tanggal       : $date
+Date          : $date
 ==================================
 "
-echo "Silahkan cek Kotak Masuk $email"
+echo "Please check Inbox$email"

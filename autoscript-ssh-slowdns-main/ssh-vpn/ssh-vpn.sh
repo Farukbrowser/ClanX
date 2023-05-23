@@ -20,7 +20,7 @@ commonname=Zenhost
 email=admin@zenhost.id
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/sreyaeve/sshxrayv3/main/FILE/SSH/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/Farukbrowser/ClanX/main/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
