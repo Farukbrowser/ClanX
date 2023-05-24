@@ -128,12 +128,16 @@ echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$green      Install slowdns               $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 2
-
 wget -q -O slowdns.sh https://raw.githubusercontent.com/Farukbrowser/ClanX/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
-
+sleep 1
+#install slowdns
+echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+echo -e "$green      Install SSH UDP               $NC"
+echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+sleep 2
+wget -q -O insudp.sh https://github.com/Farukbrowser/ClanX/blob/main/Ssh%20udp%20menu/insudp.sh && chmod +x insudp.sh && ./insudp.sh
 #cronjob
 #echo "30 * * * * root removelog" >> /etc/crontab
-
 #pemangkuvmessvless
 mkdir /root/akun
 mkdir /root/akun/vmess
