@@ -135,8 +135,8 @@ echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$green      Install SSH UDP               $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 2
-wget -O install-udp https://raw.githubusercontent.com/el-back/udp/main/install-udp
-chmod +x install-udp && ./install-udp
+sudo -s
+wget "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Ssh%20udp%20menu/insudp.sh" -O insudp.sh && chmod +x insudp.sh && ./insudp.sh
 #cronjob
 #echo "30 * * * * root removelog" >> /etc/crontab
 #vmess vless administrator
