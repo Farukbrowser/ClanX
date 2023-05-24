@@ -191,7 +191,7 @@ rm -f senmenu.sh
 rm -f setupku.sh
 rm -f xraymode.sh
 
-echo "=====================-[  24clanVPN ClanX Premium Multiport Script ]-===================="
+echo "=======-[  24clanVPN ClanX Premium Multiport Script ]-======="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -234,7 +234,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Credit By Faruk Browser🥰✅ ]-==============="
+echo "==========-[Script Credit By Faruk Browser🥰✅]-=========="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
