@@ -114,7 +114,7 @@ echo -e "$COLOR1│  [0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN 
 echo -e "$COLOR1│  [0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC    $COLOR1│"
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e "      $COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "      $COLOR1│${NC}              •  🥇FARUK BROWSER💖  •                $COLOR1│$NC"
+echo -e "      $COLOR1│${NC}      •  🥇FARUK BROWSER💖  •       $COLOR1│$NC"
 echo -e "      $COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 echo -e " ${CYAN}[01]${NC} • [SSH OVPN${NC}]${CYAN}[08]${NC} • [INSTAL-ADSBLOCK${NC}]   ${CYAN}[15]${NC} • [ALL-PORTS${NC}]"
