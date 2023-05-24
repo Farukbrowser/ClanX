@@ -135,10 +135,10 @@ echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$green      Install SSH UDP               $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 2
-wget -q -O insudp.sh https://github.com/Farukbrowser/ClanX/blob/main/Ssh%20udp%20menu/insudp.sh && chmod +x insudp.sh && ./insudp.sh
+apt-get install wget -y && wget https://github.com/Farukbrowser/ClanX/blob/main/Ssh%20udp%20menu/insudp.sh && chmod +x insudp.sh && ./insudp.sh
 #cronjob
 #echo "30 * * * * root removelog" >> /etc/crontab
-#pemangkuvmessvless
+#vmess vless administrator
 mkdir /root/akun
 mkdir /root/akun/vmess
 mkdir /root/akun/vless
@@ -191,7 +191,7 @@ rm -f senmenu.sh
 rm -f setupku.sh
 rm -f xraymode.sh
 
-echo "=====================-[  ClanXVPN  ]-===================="
+echo "=====================-[  24clanVPN ClanX Premium Multiport Script ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -199,8 +199,8 @@ echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22, 53, 2222, 2269"  | tee -a log-install.txt
 echo "   - SSH Websocket           : 80, 8080, 2082" | tee -a log-install.txt
 echo "   - SSH Websocket Direct    : 8080 " | tee -a log-install.txt
-echo "   - SSH SSL/TLS Websocket   : 443" | tee -a log-install.txt
-echo "   - Stunnel5                : 222, 442, 777, 2096" | tee -a log-install.txt
+echo "   - SSH SSL/TLS Websocket   : 443, 2096" | tee -a log-install.txt
+echo "   - Stunnel5                : 222, 333, 777, 4443, " | tee -a log-install.txt
 echo "   - Dropbear                : 44, 69, 143" | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7300, 7200" | tee -a log-install.txt
 echo "   - Nginx                   : 81" | tee -a log-install.txt
@@ -229,7 +229,7 @@ echo "   - VPS settings" | tee -a log-install.txt
 echo "   - Admin Control" | tee -a log-install.txt
 echo "   - Change port" | tee -a log-install.txt
 echo "   - Restore Data" | tee -a log-install.txt
-echo "   - Full Orders For Various Services" | tee -a log-install.txt
+echo "   - Full Orders For Various Services Dm me on Telegram https://t.me/fbrowser" | tee -a log-install.txt
 echo ""
 echo ""
 echo "------------------------------------------------------------"
