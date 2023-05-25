@@ -88,9 +88,9 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/Farukbrowser/ClanX/main/autoscript-ssh-slowdns-main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -q https://raw.githubusercontent.com/Farukbrowser/ClanX/main/autoscript-ssh-slowdns-main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 sleep 2
-wget https://raw.githubusercontent.com/Farukbrowser/ClanX/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
+wget -q https://raw.githubusercontent.com/Farukbrowser/ClanX/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
 wget -q -O kanyut.sh https://raw.githubusercontent.com/Farukbrowser/ClanX/main/kanyut.sh && chmod +x kanyut.sh && ./kanyut.sh
 #install ssh ovpn
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
@@ -98,11 +98,11 @@ echo -e "$green      Install Websocket              $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Insshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget -q https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Insshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 
 #exp
 cd /usr/bin
-wget -O xp "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/xp.sh"
+wget -q -O xp "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/xp.sh"
 chmod +x xp
 sleep 1
 wget -q -O /usr/bin/notramcpu "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Finaleuy/notramcpu" && chmod +x /usr/bin/notramcpu
@@ -135,7 +135,7 @@ echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$green      Install SSH UDP               $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 2
-wget "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Ssh%20udp%20menu/insudp.sh" -O insudp.sh && chmod +x insudp.sh && ./insudp.sh
+wget -q "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Ssh%20udp%20menu/insudp.sh" -O insudp.sh && chmod +x insudp.sh && ./insudp.sh
 #cronjob
 #echo "30 * * * * root removelog" >> /etc/crontab
 #vmess vless administrator
@@ -149,14 +149,14 @@ echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$green      Install IPSEC L2TP & SSTP               $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 1
-wget https://raw.githubusercontent.com/Farukbrowser/ClanX/main/ipsec/ipsec.sh
+wget -q https://raw.githubusercontent.com/Farukbrowser/ClanX/main/ipsec/ipsec.sh
 bash ipsec.sh
 
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 echo -e "$green      Install OPENVPN             $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 
-wget raw.githubusercontent.com/Farukbrowser/Mantap/main/ssh/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget -q https://raw.githubusercontent.com/Farukbrowser/Mantap/main/ssh/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 #install remove log
 echo "0 5 * * * root reboot" >> /etc/crontab
@@ -190,13 +190,14 @@ rm -f ins-xray.sh
 rm -f senmenu.sh
 rm -f setupku.sh
 rm -f xraymode.sh
-
+ -q
 echo "=======-[  24clanVPN ClanX Premium Multiport Script ]-======="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22, 53, 2222, 2269"  | tee -a log-install.txt
+echo "   - OpenSSH                 : 1-xxxx Random Ports"  | tee -a log-install.txt
 echo "   - SSH Websocket           : 80, 8080, 2082" | tee -a log-install.txt
 echo "   - SSH Websocket Direct    : 8080 " | tee -a log-install.txt
 echo "   - SSH SSL/TLS Websocket   : 443, 2096" | tee -a log-install.txt
