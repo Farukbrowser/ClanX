@@ -190,7 +190,7 @@ rm -f ins-xray.sh
 rm -f senmenu.sh
 rm -f setupku.sh
 rm -f xraymode.sh
- -q
+-q
 echo "=======-[  24clanVPN ClanX Premium Multiport Script ]-======="
 echo ""
 echo "------------------------------------------------------------"
