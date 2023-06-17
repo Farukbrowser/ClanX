@@ -209,6 +209,7 @@ echo "   - SSH Websocket           : 80, 8080, 2082" | tee -a log-install.txt
 echo "   - SSH Websocket Direct    : 8080 " | tee -a log-install.txt
 echo "   - SSH SSL/TLS Websocket   : 443, 2096" | tee -a log-install.txt
 echo "   - Stunnel5                : 222, 333, 777, 4443, " | tee -a log-install.txt
+echo "   - PSIPHOND PROTOCOL       : Server Data Entry In MENU" | tee -a log-install.txt
 echo "   - Dropbear                : 44, 69, 143" | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7300, 7200" | tee -a log-install.txt
 echo "   - Nginx                   : 81" | tee -a log-install.txt
