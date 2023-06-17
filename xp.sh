@@ -22,7 +22,7 @@ BURIQ () {
 }
 # https://digvpn.my.id/licensi//ipmini 
 MYIP=$(curl -sS https://ipinfo.io/ip)
-Name=$(curl -sS https://raw.githubusercontent.com/Locu-Locu/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 licensi () {
     MYIP=$(curl -sS https://ipinfo.io/ip)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/Locu-Locu/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/Farukbrowser/ClanX/main/Ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
