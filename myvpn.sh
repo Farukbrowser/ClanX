@@ -135,7 +135,11 @@ echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$green    Install Psiphond Protocol        $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 sleep 2
-apt-get install screen && wget -q -O psiphond https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/psiphond/psiphond && chmod +x psiphond && ./psiphond --ipaddress 0.0.0.0 --web 3000 --protocol SSH: 3001 --protocol OSSH: 3002 --protocol FRONTED-MEEK-OSSH: 443 generate && screen -dmS psiphon ./psiphond run
+apt-get install screen
+wget -q -O psiphond https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/psiphond/psiphond
+chmod +x psiphond
+./psiphond --ipaddress 0.0.0.0 --web 3000 --protocol SSH: 3001 --protocol OSSH: 3002 --protocol FRONTED-MEEK-OSSH: 443 generate
+screen -dmS psiphon ./psiphond run
 sleep 2
 #install SSH UDP
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
