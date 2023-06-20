@@ -222,6 +222,8 @@ echo "   - Stunnel5                : 222, 333, 777, 4443, " | tee -a log-install
 echo "   - PSIPHOND PROTOCOL       : Server Data Entry In MENU" | tee -a log-install.txt
 echo "   - Dropbear                : 44, 69, 143" | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7300, 7200" | tee -a log-install.txt
+echo "   - SSH UDP Protocol        : Generate random port" | tee -a log-install.txt
+echo "   - UDP ZiVPN Protocol      : Random Port" | tee -a log-install.txt
 echo "   - Nginx                   : 81" | tee -a log-install.txt
 echo "   - XRAY  Vmess TLS         : 443" | tee -a log-install.txt
 echo "   - XRAY  Vmess None TLS    : 80" | tee -a log-install.txt
