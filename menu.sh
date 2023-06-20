@@ -125,7 +125,7 @@ echo -e " ${CYAN}[05]${NC} • [TROJAN${NC}]  ${CYAN}[12]${NC} • [UPDATE-SCRIP
 echo -e " ${CYAN}[06]${NC} • [S-SOCKS${NC}] ${CYAN}[13]${NC} • [RESTART SERVICE${NC}]   ${CYAN}[20]${NC} • [AUTO DNS${NC}]"
 echo -e " ${CYAN}[07]${NC} • [SSH-UDP${NC}] ${CYAN}[14]${NC} • [WEBMIN MENU INS${NC}]   ${CYAN}[21]${NC} • [ADD NEW DNS${NC}]"
 echo -e " ${YELLOW}[I]${NC} • [INFO RUNNING${NC}] ${YELLOW}[L]${NC}• [LIMIT|SPEED INS${NC}]  ${YELLOW}[S]${NC} • [AUTO SSL CERT${NC}]"
-echo -e " [P]${NC} • [PSIPHON PROTOCOL] [-]${NC} • [NONE]"
+echo -e " [P]${NC} • [PSIPHON PROTOCOL] [Z]${NC} • [UDP ZiVPN]"
 echo -e " [X]${NC} • [PRESS X TO EXIT] [R]${NC} • [AUTO REBOOT MENU]"
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e ""
@@ -153,6 +153,7 @@ case $opt in
 20) clear ; fix ;;
 21) clear ; addhost ;;
 i) clear ; running ;;
+z) clear ; zi ;;
 s) clear ; genssl ;;
 l) clear ; limitspeed ;;
 reboot) clear ; reboot ;;
