@@ -139,7 +139,13 @@ apt-get install screen
 wget -q -O psiphond https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/psiphond/psiphond
 chmod +x psiphond
 ./psiphond --ipaddress 0.0.0.0 --web 3000 --protocol SSH: 3001 --protocol OSSH: 3002 --protocol FRONTED-MEEK-OSSH: 443 generate
-screen -dmS psiphon ./psiphond run
+screen -dmS psiphon ./psiphond runsleep 2
+#install ZiVPN UDP
+echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+echo -e "$green      Install ZiVPN UDP               $NC"
+echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+sleep 2
+wget -O zi.sh https://raw.githubusercontent.com/Farukbrowser/ClanX/main/udp-zivpn/zi.sh; chmod +x zi.sh; ./zi.sh
 sleep 2
 #install SSH UDP
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
