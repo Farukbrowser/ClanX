@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### by dankelthaher - scripts ###
+### by Farukbrowser - ClanX Script###
 
 ## PSIPHOND SCRIPT AUTO INSTALATION 
 
