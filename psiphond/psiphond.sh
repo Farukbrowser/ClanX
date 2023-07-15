@@ -1,8 +1,8 @@
 #!/bin/bash
 
-### by Farukbrowser - ClanX Script###
+### by dankelthaher - scripts ###
 
-## PSIPHOND SCRIPT AUTO INSTALATION 
+## PSIPHOND SCRIPT DE AUTOINSTALACON 
 
 ## VARIABLES DE COLORES
 #COLORES 
@@ -22,15 +22,15 @@ bar1="\e[1;30m◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚◚
 bar2="\033[38;5;226m---------------------------------------------------------\033[0m"
 bar3="\033[38;5;226m--------------------- = MENU = --------------------------\033[0m"
 
-#FILE PATHS
+#RUTAS DE ARCHIVOS
 cred1=".credenciales"
 dir_main="/root/psi"
 file_ip="/root/ip"
 file_init="/root/psi/psiphond"
 
-#FILE LINKS
+#ENLACES DE ARCHIVOS
 
-## INSTALLING BINARY
+## INSTALANDO BINARIO
 binario_script(){
 [[ ! -d $dir_main ]] && mkdir $dir_main
 apt-get install net-tools -y
@@ -41,30 +41,30 @@ echo -e "$ipvps" > $file_ip
         cd $dir_main
         wget 'https://docs.google.com/uc?export=download&id=1AuP6XISWohM0NbUyItnQeN1F7Ayj85Ez' -O 'psiphond'
         chmod 775 psiphond
-        ./psiphond --ipaddress 0.0.0.0 --web 3000 --protocol SSH: 3001 --protocol FRONTED-MEEK-HTTP-OSSH:80 --protocol FRONTED-MEEK-OSSH:443 generate
+        ./psiphond --ipaddress 0.0.0.0 --web 3000 --protocol FRONTED-MEEK-HTTP-OSSH:3001 --protocol SSH: 3002 --protocol OSSH: 3003 --protocol FRONTED-MEEK-OSSH: 3004 generate
         apt install screen -y
 }
 
-## INSTALACION
+## INSTALLATION
 instalar_psi(){
     clear
     if [[ "$(netstat -tlpn | grep 'psiphond' | wc -l)" != '1' ]]; then
     echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-    echo -e "${cyanR} THIS SCRIPT WILL INSTALL PSIPHOND AUTOMATICALLY"
+    echo -e "${cyanR} IS THE SCRIPT INSTALLED AT PSIPHOND AUTOMATICALLY"
     echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     read -p "$(echo -e "${blanco}DO YOU WISH TO CONTINUE ${blanco}? ${rojo}[${blanco}s/n${rojo}]${blanco}: ")"  -e -i s resp
     echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			if [[ $resp = 's' ]]; then
             cd $dir_main
             echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-            echo -e "${verde34} IF THE SCREEN FREEZES PRESS crtl + a + d\033[0m"
-                # INICIA ACA EL SERVICIO
+            echo -e "${verde34}IF THE DISPLAY FREEZES PRESSURE crtl + a + d \033[0m"
+                # START THE SERVICE HERE
 		screen
                 ./psiphond run
 
                 if [[ "$(ps x | grep 'psiphond' | grep -v 'grep'|wc -l)" != '0' ]]; then
 				   echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-                   echo -e "${verde34} SERVICE STARTED SUCCESSFULLY IN PORT 443"
+                   echo -e "${verde34} SERVICE STARTED SUCCESSFULLY IN PORT 3004"
                    echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			    else
 				echo ""
@@ -74,9 +74,9 @@ instalar_psi(){
 			    fi
             else
                    echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-                   echo -e "${blanco} GOOD OPTION IF YOU DON'T KNOW PSIPHOND"
+                   echo -e "${blanco} GOOD OPTION IF YOU DO NOT KNOW PSIPHOND"
                    echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-            fi # close the response if
+            fi # closing the answer yes
     else
     echo ""
     echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -84,7 +84,7 @@ instalar_psi(){
     echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     exit 1
     fi
-    ## FUNCTIONS 
+    ## FUNCIONES 
     
    
     echo ""
@@ -93,4 +93,3 @@ instalar_psi(){
     clear
     binario_script
     instalar_psi
-    
