@@ -1,0 +1,87 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            52:53:22:83:99:fe:e7:6f:c8:f8:f6:28:03:52:02:7e
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=scid.me
+        Validity
+            Not Before: Jun 29 16:35:39 2023 GMT
+            Not After : Oct  1 16:35:39 2025 GMT
+        Subject: CN=do.scid.me
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:c9:ad:03:19:79:72:01:51:6b:b0:e6:9e:67:f6:
+                    36:bd:af:82:94:61:92:7e:bf:f5:15:54:75:df:c9:
+                    b3:e3:f9:a0:27:03:4d:69:27:29:c6:97:fc:82:86:
+                    18:6e:9a:73:c7:29:65:1e:a1:77:d2:36:5a:63:a0:
+                    bc:3c:e5:ac:79:38:de:8f:a6:ba:fb:14:4a:0a:ac:
+                    9a:42:c1:ab:03:39:e3:ac:3b:35:a4:fb:f6:a7:c9:
+                    ce:e5:8d:e5:1b:5d:01:ec:0f:33:1c:cc:4a:19:ed:
+                    63:f8:f6:62:c4:44:0f:a4:74:87:5c:29:62:b7:8a:
+                    42:98:45:6b:1d:ee:43:52:77:25:e9:ad:84:0a:ba:
+                    fc:95:05:e4:5a:54:14:05:f5:ef:89:24:c9:ef:7d:
+                    97:ed:5a:42:87:55:65:81:d2:c3:da:73:41:40:65:
+                    72:2d:89:f1:5b:af:2a:d2:de:d3:d8:79:a0:e8:bf:
+                    af:bf:c5:3e:5c:a7:6a:3f:f4:c2:64:49:40:4c:2e:
+                    04:d5:b1:09:43:77:8a:a5:2d:2f:bb:ad:75:c9:0b:
+                    70:a8:1b:e6:ad:39:37:32:b2:97:0a:30:40:01:20:
+                    81:26:5b:4f:d6:53:3a:9c:29:2c:ed:e9:37:65:4a:
+                    5e:4a:72:94:9f:d0:69:2d:0b:83:9c:68:92:33:67:
+                    72:39
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                C1:EE:4E:5B:7E:4E:A6:53:54:80:AC:06:F9:E6:84:F8:BD:97:3E:21
+            X509v3 Authority Key Identifier: 
+                keyid:90:DD:A9:96:57:DB:FD:15:69:A3:89:36:8A:78:88:0C:EE:FC:B7:E4
+                DirName:/CN=scid.me
+                serial:7D:B1:A7:0B:AF:BA:66:72:B3:6F:09:4E:7F:3F:94:17:9A:F9:84:F5
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:do.scid.me
+    Signature Algorithm: sha256WithRSAEncryption
+         5e:4b:8e:2d:ca:55:77:23:91:83:fe:ac:c8:9e:c9:68:cf:3f:
+         76:94:50:6b:a3:9b:14:06:7c:f9:8e:6e:6d:c9:4b:60:08:d4:
+         2f:0b:7a:41:8d:83:26:12:8d:38:55:f7:6a:e5:b8:ca:6e:44:
+         cd:a6:cb:f8:98:56:62:ba:d9:5d:ee:99:46:a4:4c:73:ba:2b:
+         a6:d7:5c:e4:f4:e3:93:0d:fe:e4:40:7a:ff:15:c7:9a:ad:3c:
+         57:c0:32:2f:f7:09:21:00:3c:06:fa:14:92:30:a4:1b:45:46:
+         54:78:57:98:c2:49:99:5d:9e:d3:b0:29:3d:11:06:92:86:ee:
+         12:de:53:ea:f6:a4:2a:3b:01:6a:ed:bb:07:8a:f9:ad:6f:67:
+         ee:81:39:df:33:48:6b:aa:a3:8b:e7:26:69:d7:74:e5:93:5d:
+         d9:44:17:04:05:66:e3:f2:d9:9c:19:a4:a1:3a:ef:d7:0f:fc:
+         60:08:c2:70:ac:21:8c:9a:2a:79:67:fb:40:bd:9a:ba:1b:50:
+         58:43:2e:3a:83:6a:f2:b6:43:7f:de:28:ae:2b:03:b9:64:31:
+         b4:d5:eb:4d:0b:b9:25:29:76:82:f2:18:51:4c:71:e2:cd:34:
+         0e:12:e5:f2:b7:4c:87:32:30:f7:81:e3:6b:46:7b:3c:2e:c4:
+         65:d4:1e:6c
+-----BEGIN CERTIFICATE-----
+MIIDZzCCAk+gAwIBAgIQUlMig5n+52/I+PYoA1ICfjANBgkqhkiG9w0BAQsFADAS
+MRAwDgYDVQQDDAdzY2lkLm1lMB4XDTIzMDYyOTE2MzUzOVoXDTI1MTAwMTE2MzUz
+OVowFTETMBEGA1UEAwwKZG8uc2NpZC5tZTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAMmtAxl5cgFRa7Dmnmf2Nr2vgpRhkn6/9RVUdd/Js+P5oCcDTWkn
+KcaX/IKGGG6ac8cpZR6hd9I2WmOgvDzlrHk43o+muvsUSgqsmkLBqwM546w7NaT7
+9qfJzuWN5RtdAewPMxzMShntY/j2YsRED6R0h1wpYreKQphFax3uQ1J3JemthAq6
+/JUF5FpUFAX174kkye99l+1aQodVZYHSw9pzQUBlci2J8VuvKtLe09h5oOi/r7/F
+Plynaj/0wmRJQEwuBNWxCUN3iqUtL7utdckLcKgb5q05NzKylwowQAEggSZbT9ZT
+OpwpLO3pN2VKXkpylJ/QaS0Lg5xokjNncjkCAwEAAaOBtTCBsjAJBgNVHRMEAjAA
+MB0GA1UdDgQWBBTB7k5bfk6mU1SArAb55oT4vZc+ITBNBgNVHSMERjBEgBSQ3amW
+V9v9FWmjiTaKeIgM7vy35KEWpBQwEjEQMA4GA1UEAwwHc2NpZC5tZYIUfbGnC6+6
+ZnKzbwlOfz+UF5r5hPUwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWg
+MBUGA1UdEQQOMAyCCmRvLnNjaWQubWUwDQYJKoZIhvcNAQELBQADggEBAF5Lji3K
+VXcjkYP+rMieyWjPP3aUUGujmxQGfPmObm3JS2AI1C8LekGNgyYSjThV92rluMpu
+RM2my/iYVmK62V3umUakTHO6K6bXXOT045MN/uRAev8Vx5qtPFfAMi/3CSEAPAb6
+FJIwpBtFRlR4V5jCSZldntOwKT0RBpKG7hLeU+r2pCo7AWrtuweK+a1vZ+6BOd8z
+SGuqo4vnJmnXdOWTXdlEFwQFZuPy2ZwZpKE679cP/GAIwnCsIYyaKnln+0C9mrob
+UFhDLjqDavK2Q3/eKK4rA7lkMbTV600LuSUpdoLyGFFMceLNNA4S5fK3TIcyMPeB
+42tGezwuxGXUHmw=
+-----END CERTIFICATE-----
