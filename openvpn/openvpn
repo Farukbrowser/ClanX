@@ -174,11 +174,11 @@ auth none
 END
 
 function cert_ovpn() {
-    wget --no-check-certificate -O /etc/openvpn/server.crt "https://github.com/FighterTunnel/tunnel/raw/main/fodder/openvpn/server.crt" >>/dev/null 2>&1
-    wget --no-check-certificate -O /etc/openvpn/server.key "https://github.com/FighterTunnel/tunnel/raw/main/fodder/openvpn/server.key" >>/dev/null 2>&1
-    wget --no-check-certificate -O /etc/openvpn/ca.crt "https://github.com/FighterTunnel/tunnel/raw/main/fodder/openvpn/ca.crt" >>/dev/null 2>&1
-    wget --no-check-certificate -O /etc/openvpn/dh.pem "https://github.com/FighterTunnel/tunnel/raw/main/fodder/openvpn/dh.pem" >>/dev/null 2>&1
-    wget --no-check-certificate -O /var/www/html/index.html "https://github.com/FighterTunnel/tunnel/raw/main/fodder/openvpn/index.html" >>/dev/null 2>&1
+    wget --no-check-certificate -O /etc/openvpn/server.crt "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/openvpn/server.crt" >>/dev/null 2>&1
+    wget --no-check-certificate -O /etc/openvpn/server.key "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/openvpn/server.key" >>/dev/null 2>&1
+    wget --no-check-certificate -O /etc/openvpn/ca.crt "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/openvpn/ca.crt" >>/dev/null 2>&1
+    wget --no-check-certificate -O /etc/openvpn/dh.pem "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/openvpn/dh.pem" >>/dev/null 2>&1
+    wget --no-check-certificate -O /var/www/html/index.html "https://raw.githubusercontent.com/Farukbrowser/ClanX/main/openvpn/index.html" >>/dev/null 2>&1
 }
 cert_ovpn
 
