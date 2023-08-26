@@ -131,19 +131,19 @@ sleep 2
 wget -q -O slowdns.sh https://raw.githubusercontent.com/Farukbrowser/ClanX/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 sleep 1
 #install Psiphond Protocol
-echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
-echo -e "$green    Install Psiphond Protocol        $NC"
-echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
-sleep 2
-wget -q https://raw.githubusercontent.com/Farukbrowser/ClanX/main/psiphond/psiphond.sh
-sleep 2
+#echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+#echo -e "$green    Install Psiphond Protocol        $NC"
+#echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+#sleep 2
+#wget -q https://raw.githubusercontent.com/Farukbrowser/ClanX/main/psiphond/psiphond.sh
+#sleep 2
 #install ZiVPN UDP
-echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
-echo -e "$green      Install ZiVPN UDP               $NC"
-echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
-sleep 2
-wget -O zi.sh https://raw.githubusercontent.com/Farukbrowser/ClanX/main/udp-zivpn/zi.sh; chmod +x zi.sh; ./zi.sh
-sleep 2
+#echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+#echo -e "$green      Install ZiVPN UDP               $NC"
+#echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
+#sleep 2
+#wget -O zi.sh https://raw.githubusercontent.com/Farukbrowser/ClanX/main/udp-zivpn/zi.sh; chmod +x zi.sh; ./zi.sh
+#sleep 2
 #install SSH UDP
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 echo -e "$green      Install SSH UDP               $NC"
@@ -170,7 +170,7 @@ echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$green      Install OPENVPN             $NC"
 echo -e "[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m"
 
-wget -q https://raw.githubusercontent.com/Farukbrowser/ClanX/main/openvpn/openvpn &&  chmod +x openvpn && ./openvpn
+wget -q https://raw.githubusercontent.com/Farukbrowser/Mantap/main/ssh/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 #install remove log
 echo "0 5 * * * root reboot" >> /etc/crontab
